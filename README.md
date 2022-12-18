@@ -1,6 +1,6 @@
 # massJARM
  
-A threaded implemenation of [JARM](https://github.com/salesforce/jarm) tool to allow mass scaning.
+A threaded implemenation of [JARM](https://github.com/salesforce/jarm) tool.
 
 # massJARM
 
