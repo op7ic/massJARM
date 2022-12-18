@@ -35,9 +35,9 @@ optional arguments:
 
 # Performance Comparison
 
-| Test | Number of threads | Time Taken | Command | 
+| Test | Number of threads | Time Taken | Test Command | 
 | ------------- | ------------- | ------------- | ------------- |
 | Original [JARM](https://github.com/salesforce/jarm) | 1 | 1049s | start_time=`date +%s` && python3 jarm.py -i alexa500withPort.txt  && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s | 
-| MassJARM (default 4 threads)| 4 | 253s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s| 
-| MassJARM | 10 | 103s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 10 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s |  
-| MassJARM | 20 | 99s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 20 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s | 
+| massJARM (default 4 threads)| 4 | 253s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s| 
+| massJARM | 10 | 103s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 10 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s |  
+| massJARM | 20 | 99s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 20 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s | 
