@@ -41,3 +41,11 @@ optional arguments:
 | massJARM (default 4 threads)| 4 | 253s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s| 
 | massJARM | 10 | 103s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 10 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s |  
 | massJARM | 20 | 99s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 20 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s | 
+
+# 10M JARM
+
+The folder [10MJARM](10MJARM/) contains 443/TCP JARM scan of most popular domains based on the datasets available at these links (as of 01/01/2023). Total of 11272827 domains were scanned:
+
+* [Umbrella Popularity List](https://s3-us-west-1.amazonaws.com/umbrella-static/index.html)
+* [Majestic Top 1m most popular domains](https://majestic.com/reports/majestic-million)
+* [DomCorp 10m most popular domains](https://www.domcop.com/top-10-million-domains)
