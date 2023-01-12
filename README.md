@@ -42,10 +42,18 @@ optional arguments:
 | massJARM | 10 | 103s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 10 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s |  
 | massJARM | 20 | 99s | start_time=`date +%s` && python3 massJARM.py -i alexa500withPort.txt -t 20 && end_time=`date +%s` && echo execution time was `expr $end_time - $start_time` s | 
 
-# 10M JARM
+# 11M JARM
 
-The folder [10MJARM](10MJARM/) contains 443/TCP JARM scan of most popular domains based on the datasets available at these links (as of 01/01/2023). Total of 11272827 domains were scanned:
+The folder [11MJARM](11MJARM/) contains 443/TCP JARM scan of most popular domains based on the datasets available at these links (as of 01/01/2023). Total of 11272827 domains were scanned using ```massJARM``` tool.
 
 * [Umbrella Popularity List](https://s3-us-west-1.amazonaws.com/umbrella-static/index.html)
 * [Majestic Top 1m most popular domains](https://majestic.com/reports/majestic-million)
 * [DomCorp 10m most popular domains](https://www.domcop.com/top-10-million-domains)
+
+The results are sorted into the following files:
+
+* ```11m_domains_with_443_port.tar.bz2``` - Source file with all unique domains and port 443 added. 
+* ```11m_domains_with_JARM_tcp_443_port_empty_removed.tar.bz2``` - Result file with all JARM responses that were not negative (i.e., ```000000000000000
+00000000000000000000000000000000000000000000000```).
+* ```11m_domains_with_JARM_tcp_443_port_raw.tar.bz2``` - Raw result files with all, even empty, JARM responses.
+* ```unique_jarm_fingerprints.txt``` - Collection of unique JARM fingerprints based on scan against ```11m_domains_with_443_port.tar.bz2``` source file.
