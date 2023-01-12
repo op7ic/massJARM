@@ -53,7 +53,6 @@ The folder [11MJARM](11MJARM/) contains 443/TCP JARM scan of most popular domain
 The results are sorted into the following files:
 
 * ```11m_domains_with_443_port.tar.bz2``` - Source file with all unique domains and port 443 added. 
-* ```11m_domains_with_JARM_tcp_443_port_empty_removed.tar.bz2``` - Result file with all JARM responses that were not negative (i.e., ```000000000000000
-00000000000000000000000000000000000000000000000```).
+* ```11m_domains_with_JARM_tcp_443_port_empty_removed.tar.bz2``` - Result file with all JARM responses that were not negative (i.e., ```00000000000000000000000000000000000000000000000000000000000000```).
 * ```11m_domains_with_JARM_tcp_443_port_raw.tar.bz2``` - Raw result files with all, even empty, JARM responses.
 * ```unique_jarm_fingerprints.txt``` - Collection of unique JARM fingerprints based on scan against ```11m_domains_with_443_port.tar.bz2``` source file.
