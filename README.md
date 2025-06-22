@@ -123,22 +123,6 @@ If no port is specified, the scanner will try these common SSL/TLS ports:
 - 8080 (HTTP/HTTPS alternate)
 - 8000 (HTTP alternate)
 
-## 📊 Output Format
-
-### Console Output (CSV)
-```
-host,port,jarm
-example.com,443,27d40d40d29d40d1dc42d43d00041d4689ee210389f4f6b4b5b1b93f92252d
-google.com,443,27d40d40d29d40d1dc42d43d00041d4689ee210389f4f6b4b5b1b93f92252d
-```
-
-### CSV File Output
-When using `-o results.csv`, additional fields are included:
-```csv
-host,ip,port,jarm,timestamp
-example.com,93.184.216.34,443,27d40d40d29d40d1dc42d43d00041d4689ee210389f4f6b4b5b1b93f92252d,2024-01-15T10:30:45
-```
-
 ## 🔍 JARM Process
 
 The JARM fingerprinting process involves:
